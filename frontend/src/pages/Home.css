@@ -1,0 +1,107 @@
+.home-wrapper{
+    min-height: 300vh;
+}
+.home-hero{
+    font-family: 'Quicksand', 'Open sans';
+    height: 110vh;
+    width: 100vw;
+    background-image: url('../images/bg-blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40vh;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.home-hero>:nth-child(1){
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+.home-hero>:nth-child(2){
+    font-size: 1rem;
+    color: #fff;
+}
+.home-hero>input{
+    display: block;
+}
+.home-hero>.search{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.home-hero>.search *:not(a){
+    height: 53px;
+    padding: 12px;
+    flex: 1;
+    cursor: pointer;
+    font-family: 'Quicksand', 'Open sans';
+}
+.home-hero>.search>*:focus{
+    outline: none;
+}
+.search .category-search{
+    min-width: 150px;
+}
+.hero-btn-search{
+    background-color: var(--blue);
+    border: none;
+    color: #fff;
+    width: 120px;
+}
+
+.hero-btn-search:hover{
+    /* background-color: red; */
+    background-color: var(--bluer);
+}
+
+
+.home-ads{
+    width: 85%;
+    margin: auto;
+    min-height: 100vh;
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@media only screen and (max-width: 600px){
+    .home-ads{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .home-hero{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 37vh;
+    }
+    .home-hero>:nth-child(1){
+        font-size: 1.8rem;
+    }
+    .home-hero>:nth-child(2){
+        font-size: 0.8rem;
+    }
+    .hero-btn-search{
+        display: block;
+        background-color: var(--blue);
+        border: none;
+        color: #fff;
+        width: 120px;
+    }
+    .home-hero>.search *:not(a){
+        height: 40px;
+        padding: 12px;
+        font-size: 0.8rem;
+    }
+    select{
+        padding: 0px;
+    }
+}

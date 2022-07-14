@@ -1,0 +1,145 @@
+.ad-card{
+    font-family: 'Open sans';
+    height: 320px;
+    width: 265px;
+    /* border: 1px solid #fff; */
+    background-color: #fff;
+
+}
+.ad-card:hover{
+    -webkit-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.47);
+    box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.47);
+    cursor: pointer;
+}
+.ad-card-image{
+    height: 190px;
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px;
+    /* background-color: yellow;
+    filter: blur(10px); */
+}
+.blur-bg{
+    height: 120%;
+    width: 120%;
+    filter: blur(20px);
+}
+.blur-bg>img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.ad-card-image img{
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.5s linear;
+
+}
+
+.ad-card-desc{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+.desc1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: gray;
+}
+.desc2{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Quicksand', 'Open sans';
+}
+.desc3{
+    font-weight: 600;
+    color: #D54B4F;
+}
+.negotiable{
+    position: absolute;
+    z-index: 100;
+    background-color: var(--dark);
+    color: #fff;
+    top: 10px;
+    left: 0;
+    font-size: 0.6rem;
+    padding: 5px 7px;
+    font-weight: 600;
+}
+.negotiable::after{
+    content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:99%;
+    top:0px;
+    border:11.5px solid transparent;
+    border-left: 14px solid var(--dark);
+}
+
+.icon{
+    /* position: relative; */
+    /* display: flex; */
+    line-height: 0;
+    margin: 2px 5px;
+    top: 4px;
+}
+
+.editable{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.editable div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    transform: translateX(40px);
+    transition:all 0.25s linear;
+    
+    border-radius: 100%;
+}
+
+.editable .edit{
+    color: green;
+    /* border: 2px solid green; */
+}
+.editable .delete{
+    color: red;
+    /* border: 2px solid red; */
+}
+.editable div:hover{
+    -webkit-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.47);
+    box-shadow: 0px 0px 16px -1px rgba(0,0,0,0.47);
+
+}
+
+.ad-card:hover .editable div{
+    transform: translateX(0px);
+
+}
+.ad-card:hover .ad-card-image img{
+    transform: translateZ(50px);
+}
+

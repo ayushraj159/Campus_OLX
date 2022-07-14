@@ -1,0 +1,211 @@
+.product-wrapper{
+    margin-top: 110px;
+    min-height: 200vh;
+    width: 100vw;
+    /* background-color: #fff; */
+}
+
+.product-header{
+    background-image: url('../images/bg-blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 150px; 
+    color: #fff;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7.7vw;
+}
+
+.product-body{
+    display: flex;
+    height: 80vh;
+    width: 86vw;
+    margin: 50px auto 0 auto;
+    justify-content: center;
+    gap: 30px;
+    /* overflow: hidden    ; */
+}
+.carausal{
+    width: 63%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+}
+
+
+
+.swiper-slide {
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .mySwiper2 img{
+      max-height: 100%;
+      max-width: 100%;
+      flex-shrink: 0;
+
+    }
+    .slider-image{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid red; */
+        /* position: relative; */
+        overflow: hidden;
+    }
+    .mySwiper {
+        height: 20%;
+        /* box-sizing: border-box; */
+        margin-top: -10px;
+    }
+    .mySwiper img{
+        cursor: pointer;
+        
+    }
+    .blurred{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -10;
+        width: 100%;
+        height: 100%;
+        filter: blur(20px);
+        /* border: 2px solid black; */
+    }
+    .blurred>img{
+        height: 100%;
+        object-fit: cover !important;
+    }
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    
+    .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    
+.product-info{
+    width: 30%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+    
+.price{
+    padding: 25px 35px;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Open sans';
+
+
+}
+
+.owner-info{
+    padding: 30px 20px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    font-family: 'Quicksand';
+}
+
+.owner-name{
+    padding: 7px 0;
+    margin-top: 10px;
+    font-weight: 600;
+    
+}
+.user-icon{
+    line-height: 3;
+    font-size: 3rem;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.owner-contact{
+    height: 3rem;
+    font-size: 0.9rem;
+    flex: 1;
+    width: 100%;
+    padding: 10px 0 10px 5px;
+    color: var(--blue);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--blue);
+}
+.contact a{
+    flex: 1;
+    padding: 5px;
+}
+.contact{
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    margin-top: 10px;
+    
+}
+.call{
+    font-size: 2rem;
+    margin: 0 10px;
+}
+a{
+    text-decoration: none;
+}
+
+.product-bottom{
+    margin-top: 20px;
+
+}
+.product-desc{
+    font-family: 'Quicksand';
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+.product-desc>p{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .product-body{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .carausal{
+        width: 90vw;
+    }
+    .product-info{
+        display: flex;
+        width: 90vw;
+    }
+
+}

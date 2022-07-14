@@ -1,0 +1,24 @@
+.footer{
+    margin-top: auto;
+    padding-top: 200px;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* color: var(--dark); */
+    color: #fff;
+    /* font-family: 'Pacifico'; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    
+    
+}
+.text{
+    background-color: var(--dark);
+    width: 100%;
+    text-align: center;
+    font-family: var(--font1);
+    padding: 10px 0;
+
+}

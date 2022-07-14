@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Open+Sans&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root{
+    --blue: rgb(0, 165, 145);
+    --bluer: rgb(11, 142, 129);
+    --dark: rgb(55, 65, 82);
+    --font1: 'Quicksand';
+    --font2: 'Open sans';
+
+}
+*{
+    /* font-family: 'Quicksand', 'Open sans'; */
+    /* transition: 0.5s; */
+}
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    /* background: rgb(0, 165, 145, 0.3); */
+    background: rgb(55, 65, 82, 0.5);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark);
+  }
+
+
+body, html{
+    overflow-x: hidden;
+    /* background-color: #f9f9f9; */
+    background-color: #f4f8fb;
+}
