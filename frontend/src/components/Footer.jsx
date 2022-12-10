@@ -7,7 +7,7 @@ export default function Footer(){
             <div className="footer">
             <div className="text">
 
-                &#169; Ratan Sen 
+                &#169; Ayush Raj 
             </div>
             </div>
         </>
